@@ -1,1 +1,96 @@
+CPU Scheduler Simulator Project Report
 
+1. Title Page
+Project Title: Intelligent CPU Scheduler Simulator
+
+Submitted by: [Akshaya Kumar Sahoo]
+
+Date: [24/03/2025]
+
+Institution: [Lovely Proffesional University Punjab]
+
+2. Introduction
+Objective:
+"To develop an interactive simulator that visualizes CPU scheduling algorithms (FCFS, SJF, Round Robin, Priority Scheduling) with performance metrics like average waiting time and turnaround time."
+
+Scope:
+
+Simulates 4 scheduling algorithms.
+
+Generates Gantt charts and comparative analysis.
+
+Designed for OS students and educators.
+
+3. Algorithms Implemented
+A. First-Come-First-Serve (FCFS)
+Principle: Processes execute in arrival order.
+
+Pros: Simple, no starvation.
+
+Cons: Poor performance for long processes.
+
+B. Shortest Job First (SJF)
+Principle: Executes the shortest job first.
+
+Pros: Minimizes average waiting time.
+
+Cons: Requires burst time prediction.
+
+(Similarly describe Round Robin and Priority Scheduling)
+
+4. System Design
+A. Modules
+Input Module:
+
+Collects process details (Burst Time, Arrival Time, Priority).
+
+Example input:
+
+python
+Copy
+processes = [
+    {"PID": 1, "Arrival": 0, "Burst": 5, "Priority": 3},
+    {"PID": 2, "Arrival": 1, "Burst": 3, "Priority": 1}
+]
+Scheduling Module:
+
+Implements all 4 algorithms.
+
+Visualization Module:
+
+Uses Matplotlib to plot Gantt charts.
+
+B. Tools Used
+Language: Python
+
+Libraries: Tkinter (GUI), Matplotlib (Visualization)
+
+5. Results & Analysis
+A. Screenshots
+Add 2-3 annotated screenshots of your simulator:
+GUI Example (Replace with your actual screenshot)
+
+B. Performance Comparison
+Algorithm	Avg. Waiting Time	Avg. Turnaround Time
+FCFS	12ms	20ms
+SJF	8ms	15ms
+Round Robin	10ms	18ms
+(Include your actual simulation results)
+
+6. Conclusion & Future Work
+Conclusion:
+"The simulator successfully demonstrates how different scheduling algorithms impact process execution. SJF showed the lowest waiting time, while FCFS was the simplest to implement."
+
+Future Enhancements:
+
+Add preemptive algorithms (SRTF).
+
+Integrate a comparison mode for all algorithms.
+
+7. References
+Abraham Silberschatz, Operating System Concepts.
+
+GeeksforGeeks CPU Scheduling Articles
+Sample Conclusion:
+
+"The simulator can be extended with multilevel queue scheduling for advanced scenarios."
