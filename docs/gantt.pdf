@@ -1,1 +1,38 @@
+Gantt Charts for Each Algorithm
+Include one Gantt chart per algorithm with these elements:
 
+A. FCFS (First-Come-First-Serve)
+Chart:
+FCFS Gantt Chart (Example)
+
+Data Table:
+
+Process	Arrival Time	Burst Time	Start Time	End Time
+P1	0	5	0	5
+P2	1	3	5	8
+P3	2	4	8	12
+B. SJF (Shortest Job First)
+Chart:
+SJF Gantt Chart (Example)
+
+Data Table:
+
+Process	Burst Time	Start Time	End Time
+P2	3	0	3
+P3	4	3	7
+P1	5	7	12
+(Repeat for Round Robin and Priority Scheduling)
+
+3. Comparative Analysis
+Summary Table:
+
+Algorithm	Avg. Waiting Time	Avg. Turnaround Time
+FCFS	5.33 ms	8.33 ms
+SJF	3.33 ms	6.33 ms
+Round Robin	4.0 ms	7.0 ms
+4. Key Observations
+FCFS: Simple but causes convoy effect (long processes delay short ones).
+
+SJF: Minimizes waiting time but requires burst time knowledge.
+
+Round Robin: Fair but high overhead due to context switching.
